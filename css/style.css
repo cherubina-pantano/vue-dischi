@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +7,67 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  color: #fff;
+  background-color: #192d3c;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+.top-header {
+  padding: 10px 10px 5px;
+  background-color: #2b3a47;
+}
+
+.top-header img {
+  max-height: 50px;
+}
+
+/* Albums */
+.albums-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 10px;
+  list-style: none;
+}
+
+.album {
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  text-align: center;
+  background-color: #2b3a47;
+}
+
+.wrap-images {
+  min-height: 170px;
+}
+
+.album .title {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.album .author,
+.album .year {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.album .author {
+  font-size: 19px;
+}
+
+/* Filter */
+.filter-genre {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.filter-genre select {
+  margin-left: 10px;
 }

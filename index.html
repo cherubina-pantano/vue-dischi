@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div id="app" class="container">
+      <!-- Header -->
+      <header class="top-header">
+        <img src="./img/logo.png" alt="Spotify-logo">
+      </header>
+      <!-- Albums -->
+      <div class="albums-container">
+        <!-- Filter  -->
+        <div class="filter-genre">
+            Filter by genre
+            <select>
+              <option value="all">All</option>
+              <option value="pop">Pop</option>
+              <option value="rock">Rock</option>
+              <option value="metal">Metal</option>
+              <option value="jazz">Jazz</option>
+            </select>
+        </div>
+        <!-- Lista album -->
+        <ul class="albums-list">
+          <li class="album" v-for="album in albums">
+            <div class="wrap-images">
+              <img :src="album.poster" :alt="album.title">
+            </div>
+
+              <h3 class="title"> {{ album.title }}</h3>
+              <div class="author">{{ album.author }}</div>
+              <div class="year">{{ album.year }}</div>
+              <div class="genre">{{ album.genre }}</div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
 
 
 
